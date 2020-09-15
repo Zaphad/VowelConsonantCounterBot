@@ -1,5 +1,4 @@
 <?php
-
 include('vendor/autoload.php');
 include('buttons.php');
 include('counter.php');
@@ -8,7 +7,6 @@ include('db_logic.php');
 
 use Telegram\Bot\Api;
 
-$api = '1183163027:AAGuVYEf0m5_OHMvsDdTDw8WjcEXELEEiMo';
 $telegram = new Api($api);
 $result = $telegram->getWebhookUpdates();
 $text = $result["message"]["text"];
